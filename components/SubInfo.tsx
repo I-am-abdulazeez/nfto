@@ -52,7 +52,8 @@ const SubInfo: React.FC = () => {
         justifyContent: "space-between",
       }}
     >
-      <Text>SubInfo</Text>
+      <People />
+      <EndDate />
     </View>
   );
 };
