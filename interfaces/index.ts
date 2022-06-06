@@ -1,3 +1,7 @@
+export interface FocusedStatusBarProps {
+  backgroundColor: string;
+}
+
 export interface NTFCardProps {
   data: {
     id: string;
@@ -14,8 +18,4 @@ export interface NTFCardProps {
       date: string;
     }[];
   };
-}
-
-export interface FocusedStatusBarProps {
-  backgroundColor: string;
 }
