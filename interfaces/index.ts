@@ -21,7 +21,8 @@ export interface NTFCardProps {
 }
 
 export interface CircleButtonProps {
-  imageUrl: string;
+  imageUrl: any;
+  handlePress?: () => void;
   right: number;
   top: number;
 }
