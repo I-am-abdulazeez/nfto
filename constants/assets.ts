@@ -1,22 +1,22 @@
-import badge from "../assets/icons/badge.png";
-import eth from "../assets/icons/eth.png";
-import heart from "../assets/icons/heart.png";
-import left from "../assets/icons/left.png";
-import search from "../assets/icons/search.png";
+const badge = require("../assets/icons/badge.png");
+const eth = require("../assets/icons/eth.png");
+const heart = require("../assets/icons/heart.png");
+const left = require("../assets/icons/left.png");
+const search = require("../assets/icons/search.png");
 
-import logo from "../assets/images/logo.png";
-import nft01 from "../assets/images/nft01.png";
-import nft02 from "../assets/images/nft02.jpeg";
-import nft03 from "../assets/images/nft03.jpeg";
-import nft04 from "../assets/images/nft04.jpeg";
-import nft05 from "../assets/images/nft05.jpeg";
-import nft06 from "../assets/images/nft06.jpeg";
-import nft07 from "../assets/images/nft07.jpeg";
+const logo = require("../assets/images/logo.png");
+const nft01 = require("../assets/images/nft01.png");
+const nft02 = require("../assets/images/nft02.jpeg");
+const nft03 = require("../assets/images/nft03.jpeg");
+const nft04 = require("../assets/images/nft04.jpeg");
+const nft05 = require("../assets/images/nft05.jpeg");
+const nft06 = require("../assets/images/nft06.jpeg");
+const nft07 = require("../assets/images/nft07.jpeg");
 
-import person01 from "../assets/images/person01.png";
-import person02 from "../assets/images/person02.png";
-import person03 from "../assets/images/person03.png";
-import person04 from "../assets/images/person04.png";
+const person01 = require("../assets/images/person01.png");
+const person02 = require("../assets/images/person02.png");
+const person03 = require("../assets/images/person03.png");
+const person04 = require("../assets/images/person04.png");
 
 export default {
   badge,
