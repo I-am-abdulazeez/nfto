@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-const NTFTitle: React.FC = () => {
+const NFTTitle: React.FC = () => {
   return (
     <View>
       <Text>NTFTitle</Text>
@@ -8,4 +8,4 @@ const NTFTitle: React.FC = () => {
   );
 };
 
-export { NTFTitle };
+export { NFTTitle };
