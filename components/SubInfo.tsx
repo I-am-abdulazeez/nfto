@@ -8,4 +8,20 @@ const NFTTitle: React.FC = () => {
   );
 };
 
-export { NFTTitle };
+const EthPrice: React.FC = () => {
+  return (
+    <View>
+      <Text>EthPrice</Text>
+    </View>
+  );
+};
+
+const ImageCmp: React.FC = () => {
+  return (
+    <View>
+      <Text>ImageCmp</Text>
+    </View>
+  );
+};
+
+export { NFTTitle, EthPrice, ImageCmp };
