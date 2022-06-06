@@ -19,3 +19,9 @@ export interface NTFCardProps {
     }[];
   };
 }
+
+export interface CircleButtonProps {
+  imageUrl: string;
+  right: number;
+  top: number;
+}
