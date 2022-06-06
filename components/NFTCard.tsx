@@ -1,9 +1,18 @@
 import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
+import { CircleButton } from "./Button";
+import {
+  NFTTitle,
+  EthPrice,
+  ImageCmp,
+  People,
+  EndDate,
+  SubInfo,
+} from "./SubInfo";
+
 import { SHADOWS, COLORS, SIZES, assets } from "../constants";
 import { NTFCardProps } from "../interfaces";
-import { CircleButton } from "./Button";
 
 const NFTCard: React.FC<NTFCardProps> = ({ data }) => {
   const navigation = useNavigation();
@@ -28,7 +37,6 @@ const NFTCard: React.FC<NTFCardProps> = ({ data }) => {
             borderTopRightRadius: SIZES.font,
           }}
         />
-
         <CircleButton imageUrl={assets.heart} right={10} top={10} />
       </View>
     </View>
