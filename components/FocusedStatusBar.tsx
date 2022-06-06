@@ -1,9 +1,8 @@
-import { useIsFocused } from "@react-navigation/core";
 import { StatusBar } from "react-native";
 
-interface FocusedStatusBarProps {
-  backgroundColor: string;
-}
+import { useIsFocused } from "@react-navigation/core";
+
+import { FocusedStatusBarProps } from "../interfaces";
 
 const FocusedStatusBar: React.FC<FocusedStatusBarProps> = (props) => {
   const isFocused = useIsFocused();
