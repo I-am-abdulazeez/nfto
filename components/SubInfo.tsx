@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
 
-const SubInfo: React.FC = () => {
+const NTFTitle: React.FC = () => {
   return (
     <View>
-      <Text>SubInfo</Text>
+      <Text>NTFTitle</Text>
     </View>
   );
 };
 
-export default SubInfo;
+export { NTFTitle };
