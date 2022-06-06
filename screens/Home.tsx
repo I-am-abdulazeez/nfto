@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <View style={{ zIndex: 0 }}>
           <FlatList
             data={NFTData}
-            renderItem={({ item }) => <NFTCard data={item.name} />}
+            renderItem={({ item }) => <NFTCard data={item} />}
             keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}
             ListHeaderComponent={<HomeHeader />}
