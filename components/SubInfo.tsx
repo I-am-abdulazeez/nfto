@@ -24,4 +24,28 @@ const ImageCmp: React.FC = () => {
   );
 };
 
-export { NFTTitle, EthPrice, ImageCmp };
+const People: React.FC = () => {
+  return (
+    <View>
+      <Text>People</Text>
+    </View>
+  );
+};
+
+const EndDate: React.FC = () => {
+  return (
+    <View>
+      <Text>EndDate</Text>
+    </View>
+  );
+};
+
+const SubInfo: React.FC = () => {
+  return (
+    <View>
+      <Text>SubInfo</Text>
+    </View>
+  );
+};
+
+export { NFTTitle, EthPrice, ImageCmp, People, EndDate, SubInfo };
