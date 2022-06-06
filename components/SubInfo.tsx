@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import { SIZES } from "../constants";
 
 const NFTTitle: React.FC = () => {
   return (
@@ -42,7 +43,15 @@ const EndDate: React.FC = () => {
 
 const SubInfo: React.FC = () => {
   return (
-    <View>
+    <View
+      style={{
+        width: "100%",
+        paddingHorizontal: SIZES.font,
+        marginTop: -SIZES.extraLarge,
+        flexDirection: "row",
+        justifyContent: "space-between",
+      }}
+    >
       <Text>SubInfo</Text>
     </View>
   );
