@@ -21,7 +21,7 @@ const NFTTitle: React.FC<NFTTileProps> = ({
       </Text>
       <Text
         style={{
-          fontFamily: FONTS.regular,
+          fontFamily: FONTS.semiBold,
           fontSize: subTitleSize,
           color: COLORS.primary,
         }}
