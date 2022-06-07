@@ -33,3 +33,10 @@ export interface ImageCmpProps {
   imageUrl: ImageSourcePropType;
   index: number;
 }
+
+export interface NFTTileProps {
+  title: string;
+  subTitle: string;
+  titleSize: number;
+  subTitleSize: number;
+}
