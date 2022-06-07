@@ -32,4 +32,10 @@ const CircleButton: React.FC<CircleButtonProps> = ({
   );
 };
 
-export { CircleButton };
+const RectButton = () => {
+  <View>
+    <Text>Button</Text>
+  </View>;
+};
+
+export { CircleButton, RectButton };
