@@ -28,3 +28,8 @@ export interface CircleButtonProps {
   right: number;
   top: number;
 }
+
+export interface ImageCmpProps {
+  imageUrl: ImageSourcePropType;
+  index: number;
+}
