@@ -40,6 +40,10 @@ const NFTCard: React.FC<NTFCardProps> = ({ data }) => {
         <CircleButton imageUrl={assets.heart} right={10} top={10} />
       </View>
       <SubInfo />
+
+      <View style={{ width: "100%", padding: SIZES.font }}>
+        <NFTTitle />
+      </View>
     </View>
   );
 };
