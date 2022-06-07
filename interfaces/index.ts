@@ -1,3 +1,5 @@
+import { ImageSourcePropType } from "react-native";
+
 export interface FocusedStatusBarProps {
   backgroundColor: string;
 }
@@ -9,19 +11,19 @@ export interface NTFCardProps {
     creator: string;
     price: number;
     description: string;
-    image: any;
+    image: ImageSourcePropType;
     bids: {
       id: string;
       name: string;
       price: number;
-      image: any;
+      image: ImageSourcePropType;
       date: string;
     }[];
   };
 }
 
 export interface CircleButtonProps {
-  imageUrl: any;
+  imageUrl: ImageSourcePropType;
   handlePress?: () => void;
   right: number;
   top: number;
