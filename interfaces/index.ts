@@ -40,3 +40,7 @@ export interface NFTTileProps {
   titleSize: number;
   subTitleSize: number;
 }
+
+export interface EthPriceProps {
+  price: number;
+}
