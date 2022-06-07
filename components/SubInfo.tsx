@@ -1,11 +1,33 @@
 import { Image, Text, View } from "react-native";
 import { assets, COLORS, FONTS, SHADOWS, SIZES } from "../constants";
-import { ImageCmpProps } from "../interfaces";
+import { ImageCmpProps, NFTTileProps } from "../interfaces";
 
-const NFTTitle: React.FC = () => {
+const NFTTitle: React.FC<NFTTileProps> = ({
+  title,
+  subTitle,
+  titleSize,
+  subTitleSize,
+}) => {
   return (
     <View>
-      <Text>NTFTitle</Text>
+      <Text
+        style={{
+          fontFamily: FONTS.semiBold,
+          fontSize: titleSize,
+          color: COLORS.primary,
+        }}
+      >
+        {title}
+      </Text>
+      <Text
+        style={{
+          fontFamily: FONTS.regular,
+          fontSize: subTitleSize,
+          color: COLORS.primary,
+        }}
+      >
+        {subTitle}
+      </Text>
     </View>
   );
 };
