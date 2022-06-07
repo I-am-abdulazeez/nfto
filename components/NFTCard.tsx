@@ -48,6 +48,14 @@ const NFTCard: React.FC<NTFCardProps> = ({ data }) => {
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        ></View>
       </View>
     </View>
   );
