@@ -1,12 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
-
+import { useEffect, useState } from "react";
 // Navigation
 import { createStackNavigator } from "@react-navigation/stack";
 import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 
 // Fonts
-import { useFonts } from "expo-font";
+import {
+  Inter_300Light,
+  Inter_400Regular,
+  Inter_500Medium,
+  Inter_600SemiBold,
+  Inter_700Bold,
+} from "@expo-google-fonts/inter";
+
+import { loadAsync } from "expo-font";
+
+import AppLoading from "expo-app-loading";
 
 // Screens import
 import HomeScreen from "./screens/Home";
@@ -22,15 +30,25 @@ const theme = {
 };
 
 const App: React.FC = () => {
-  const [fontsLoaded] = useFonts({
-    InterBold: require("./assets/fonts/Inter-Bold.ttf"),
-    InterSemiBold: require("./assets/fonts/Inter-SemiBold.ttf"),
-    InterMedium: require("./assets/fonts/Inter-Medium.ttf"),
-    InterRegular: require("./assets/fonts/Inter-Regular.ttf"),
-    InterLight: require("./assets/fonts/Inter-Light.ttf"),
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+  const fetchFonts = async () => {
+    await loadAsync({
+      Inter_300Light,
+      Inter_400Regular,
+      Inter_500Medium,
+      Inter_600SemiBold,
+      Inter_700Bold,
+    });
+    setFontsLoaded(true);
+  };
+
+  useEffect(() => {
+    fetchFonts();
   });
 
-  if (!fontsLoaded) null;
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
 
   return (
     <NavigationContainer theme={theme}>
