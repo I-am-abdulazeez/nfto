@@ -44,3 +44,9 @@ export interface NFTTileProps {
 export interface EthPriceProps {
   price: number;
 }
+
+export interface CustRectButtonProps {
+  minWidth: number;
+  fontSize: number;
+  handlePress?: () => void;
+}
