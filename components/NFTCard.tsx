@@ -1,7 +1,7 @@
 import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import { CircleButton } from "./Button";
+import { CircleButton, CustRectButton } from "./Button";
 import {
   NFTTitle,
   EthPrice,
@@ -55,7 +55,16 @@ const NFTCard: React.FC<NTFCardProps> = ({ data }) => {
             justifyContent: "space-between",
             alignItems: "center",
           }}
-        ></View>
+        >
+          <EthPrice price={data.price} />
+          <CustRectButton
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() =>
+              navigation.navigate("Details" as never, { data } as never)
+            }
+          />
+        </View>
       </View>
     </View>
   );
