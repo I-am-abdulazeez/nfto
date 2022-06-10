@@ -1,6 +1,6 @@
 import { Image, Text, View } from "react-native";
 import { assets, COLORS, FONTS, SHADOWS, SIZES } from "../constants";
-import { ImageCmpProps, NFTTileProps } from "../interfaces";
+import { EthPriceProps, ImageCmpProps, NFTTileProps } from "../interfaces";
 
 const NFTTitle: React.FC<NFTTileProps> = ({
   title,
@@ -32,10 +32,23 @@ const NFTTitle: React.FC<NFTTileProps> = ({
   );
 };
 
-const EthPrice: React.FC = () => {
+const EthPrice: React.FC<EthPriceProps> = ({ price }) => {
   return (
-    <View>
-      <Text>EthPrice</Text>
+    <View style={{ flexDirection: "row", alignItems: "center" }}>
+      <Image
+        source={assets.eth}
+        resizeMode={"contain"}
+        style={{ width: 20, height: 20, marginRight: 2 }}
+      />
+      <Text
+        style={{
+          fontFamily: FONTS.medium,
+          fontSize: SIZES.medium,
+          color: COLORS.primary,
+        }}
+      >
+        {price}
+      </Text>
     </View>
   );
 };
