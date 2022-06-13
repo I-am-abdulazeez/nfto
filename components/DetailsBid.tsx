@@ -1,9 +1,9 @@
 import { View, Text, Image } from "react-native";
 
-import { COLORS, SIZES, FONTS } from "../constants";
+import { EthPrice } from "../components";
 
+import { COLORS, SIZES, FONTS } from "../constants";
 import { DetailsBidProps } from "../interfaces";
-import { EthPrice } from "./SubInfo";
 
 const DetailsBid: React.FC<DetailsBidProps> = ({ bid }) => {
   return (
