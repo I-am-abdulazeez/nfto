@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { View, Text } from "react-native";
 
-import { EthPrice, NFTTitle } from "./SubInfo";
+import { EthPrice, NFTTitle } from "../components";
 
 import { COLORS, SIZES, FONTS } from "../constants";
 import { DetailsDescProps } from "../interfaces";
