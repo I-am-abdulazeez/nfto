@@ -1,12 +1,21 @@
-import { View, Text, TouchableOpacity, Image } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  StyleProp,
+  ViewStyle,
+} from "react-native";
 
 import { COLORS, SIZES, SHADOWS, FONTS } from "../constants";
-import { CircleButtonProps, CustRectButtonProps } from "../interfaces";
+import { CustRectButtonProps } from "../interfaces";
+
+import { CircleButtonProps } from "../types";
 
 const CircleButton: React.FC<CircleButtonProps> = ({
   imageUrl,
   handlePress,
-  ...props
+  ...rest
 }) => {
   return (
     <TouchableOpacity
@@ -20,7 +29,7 @@ const CircleButton: React.FC<CircleButtonProps> = ({
         alignItems: "center",
         justifyContent: "center",
         ...SHADOWS.light,
-        ...props,
+        ...rest,
       }}
     >
       <Image
@@ -36,7 +45,7 @@ const CustRectButton: React.FC<CustRectButtonProps> = ({
   minWidth,
   fontSize,
   handlePress,
-  ...props
+  ...rest
 }) => {
   return (
     <TouchableOpacity
@@ -46,7 +55,7 @@ const CustRectButton: React.FC<CustRectButtonProps> = ({
         borderRadius: SIZES.extraLarge,
         minWidth: minWidth,
         padding: SIZES.small,
-        ...props,
+        ...rest,
       }}
     >
       <Text
