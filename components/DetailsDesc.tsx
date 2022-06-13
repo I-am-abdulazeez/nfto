@@ -8,6 +8,19 @@ import { COLORS, SIZES, FONTS } from "../constants";
 import { DetailsDescProps } from "../interfaces";
 
 const DetailsDesc: React.FC<DetailsDescProps> = ({ data }) => {
+  const [text, setText] = useState(data.description.slice(0, 100));
+  const [readMore, setReadMore] = useState(false);
+
+  const handleReadMore = () => {
+    if (!readMore) {
+      setText(data.description);
+      setReadMore(true);
+    } else {
+      setText(data.description.slice(0, 100));
+      setReadMore(false);
+    }
+  };
+
   return (
     <>
       <View
@@ -46,7 +59,18 @@ const DetailsDesc: React.FC<DetailsDescProps> = ({ data }) => {
               lineHeight: SIZES.large,
             }}
           >
-            {data.description}
+            {text}
+            {!readMore && "..."}
+            <Text
+              style={{
+                fontSize: SIZES.small,
+                fontFamily: FONTS.semiBold,
+                color: COLORS.primary,
+              }}
+              onPress={handleReadMore}
+            >
+              {readMore ? " Show Less" : "Read More"}
+            </Text>
           </Text>
         </View>
       </View>
