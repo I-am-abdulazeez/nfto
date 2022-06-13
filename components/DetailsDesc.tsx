@@ -26,6 +26,30 @@ const DetailsDesc: React.FC<DetailsDescProps> = ({ data }) => {
         />
         <EthPrice price={data.price} />
       </View>
+
+      <View style={{ marginVertical: SIZES.extraLarge * 1.5 }}>
+        <Text
+          style={{
+            fontSize: SIZES.font,
+            fontFamily: FONTS.semiBold,
+            color: COLORS.primary,
+          }}
+        >
+          Description
+        </Text>
+        <View style={{ marginTop: SIZES.base }}>
+          <Text
+            style={{
+              fontSize: SIZES.small,
+              fontFamily: FONTS.regular,
+              color: COLORS.secondary,
+              lineHeight: SIZES.large,
+            }}
+          >
+            {data.description}
+          </Text>
+        </View>
+      </View>
     </>
   );
 };
