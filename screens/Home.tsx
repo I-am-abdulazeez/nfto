@@ -1,12 +1,23 @@
 import { useState } from "react";
-import { Text, View, FlatList, SafeAreaView } from "react-native";
+import { View, FlatList, SafeAreaView } from "react-native";
 
 import { HomeHeader, NFTCard, FocusedStatusBar } from "../components";
 
 import { COLORS, NFTData } from "../constants";
 
 const Home: React.FC = () => {
-  const [] = useState({});
+  const [nftData, setNftData] = useState(NFTData);
+
+  const handleSearch = (value: string) => {
+    if (!value.length) return setNftData(NFTData);
+
+    const filteredData = NFTData.filter((item) =>
+      item.name.toLowerCase().includes(value.toLowerCase())
+    );
+
+    if (filteredData.length) setNftData(filteredData);
+    else setNftData(NFTData);
+  };
   // "#772ea2"
   return (
     <SafeAreaView style={{ flex: 1 }}>
