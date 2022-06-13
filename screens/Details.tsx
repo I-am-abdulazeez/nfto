@@ -33,7 +33,7 @@ const DetailsHeader: React.FC<DetailsHeaderProps> = ({ data, navigation }) => {
 
       <CircleButton
         right={15}
-        imageUrl={assets.left}
+        imageUrl={assets.heart}
         top={StatusBar?.currentHeight! + 15}
       />
     </View>
