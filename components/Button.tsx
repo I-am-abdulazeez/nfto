@@ -1,15 +1,7 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  StyleProp,
-  ViewStyle,
-} from "react-native";
+import { Text, TouchableOpacity, Image } from "react-native";
 
 import { COLORS, SIZES, SHADOWS, FONTS } from "../constants";
 import { CustRectButtonProps } from "../interfaces";
-
 import { CircleButtonProps } from "../types";
 
 const CircleButton: React.FC<CircleButtonProps> = ({
