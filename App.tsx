@@ -20,6 +20,7 @@ import DetailsScreen from "./screens/Details";
 
 import { StackParams } from "./types";
 import { theme } from "./assets/theme";
+import { NFTData } from "./constants";
 
 const Stack = createStackNavigator<StackParams>();
 
