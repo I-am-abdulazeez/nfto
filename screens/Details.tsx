@@ -6,14 +6,13 @@ import {
   FlatList,
   StatusBar,
 } from "react-native";
+
 import { DetailsBid, DetailsDesc, FocusedStatusBar } from "../components";
 import { CustRectButton, CircleButton } from "../components/Button";
 import { SubInfo } from "../components/SubInfo";
 
 import { FONTS, COLORS, SIZES, assets, SHADOWS } from "../constants";
-
 import { DetailsHeaderProps } from "../interfaces";
-
 import { DetailsProps } from "../types";
 
 const DetailsHeader: React.FC<DetailsHeaderProps> = ({ data, navigation }) => {
