@@ -54,3 +54,7 @@ export interface DetailsHeaderProps {
   data: NFTDataType;
   navigation: StackNavigationProp<StackParams, "Details", undefined>;
 }
+
+export interface DetailsDescProps {
+  data: NFTDataType;
+}
