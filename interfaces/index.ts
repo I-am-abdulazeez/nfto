@@ -58,3 +58,7 @@ export interface DetailsHeaderProps {
 export interface DetailsDescProps {
   data: NFTDataType;
 }
+
+export interface HomeHeaderProps {
+  onSearch: (value: string) => void;
+}
