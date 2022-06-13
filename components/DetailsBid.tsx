@@ -1,6 +1,6 @@
 import { View, Text, Image } from "react-native";
 
-import { EthPrice } from "../components";
+import { EthPrice } from "../components/SubInfo";
 
 import { COLORS, SIZES, FONTS } from "../constants";
 import { DetailsBidProps } from "../interfaces";
