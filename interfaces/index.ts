@@ -37,3 +37,13 @@ export interface CustRectButtonProps {
   fontSize: number;
   handlePress?: () => void;
 }
+
+export interface DetailsBidProps {
+  bid: {
+    id: string;
+    name: string;
+    price: number;
+    image: ImageSourcePropType;
+    date: string;
+  };
+}
