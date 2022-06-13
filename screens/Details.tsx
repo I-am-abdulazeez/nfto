@@ -6,8 +6,9 @@ import {
   FlatList,
   StatusBar,
 } from "react-native";
-import { DetailsBid, FocusedStatusBar } from "../components";
+import { DetailsBid, DetailsDesc, FocusedStatusBar } from "../components";
 import { CustRectButton, CircleButton } from "../components/Button";
+import { SubInfo } from "../components/SubInfo";
 
 import { FONTS, COLORS, SIZES, assets, SHADOWS } from "../constants";
 
@@ -80,6 +81,10 @@ const Details: React.FC<DetailsProps> = ({ route, navigation }) => {
         ListHeaderComponent={
           <>
             <DetailsHeader data={data} navigation={navigation} />
+            <SubInfo />
+            <View style={{ padding: SIZES.font }}>
+              <DetailsDesc data={data} />
+            </View>
           </>
         }
       />
