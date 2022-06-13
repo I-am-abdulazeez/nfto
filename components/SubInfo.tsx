@@ -1,4 +1,5 @@
 import { Image, Text, View } from "react-native";
+
 import { assets, COLORS, FONTS, SHADOWS, SIZES } from "../constants";
 import { EthPriceProps, ImageCmpProps, NFTTileProps } from "../interfaces";
 
