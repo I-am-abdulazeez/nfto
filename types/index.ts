@@ -1,6 +1,7 @@
 import { StackScreenProps } from "@react-navigation/stack";
 import { ImageSourcePropType } from "react-native";
-import { NFTData } from "../constants";
+
+import { CircleButtonDefaultProps } from "../interfaces";
 
 export type NFTDataType = {
   id: string;
@@ -26,5 +27,18 @@ export type StackParams = {
     data: NFTDataType;
   };
 };
+
+export type CircleButtonConditionalProps =
+  | {
+      right?: number;
+      left?: never;
+    }
+  | {
+      right?: never;
+      left?: number;
+    };
+
+export type CircleButtonProps = CircleButtonDefaultProps &
+  CircleButtonConditionalProps;
 
 export type DetailsProps = StackScreenProps<StackParams, "Details">;
