@@ -1,5 +1,8 @@
 import { ImageSourcePropType } from "react-native";
-import { NFTDataType } from "../types";
+
+import { StackNavigationProp } from "@react-navigation/stack";
+
+import { NFTDataType, StackParams } from "../types";
 
 export interface FocusedStatusBarProps {
   backgroundColor: string;
@@ -9,11 +12,10 @@ export interface NTFCardProps {
   data: NFTDataType;
 }
 
-export interface CircleButtonProps {
+export interface CircleButtonDefaultProps {
   imageUrl: ImageSourcePropType;
   handlePress?: () => void;
-  right: number;
-  top: number;
+  top?: number;
 }
 
 export interface ImageCmpProps {
@@ -46,4 +48,9 @@ export interface DetailsBidProps {
     image: ImageSourcePropType;
     date: string;
   };
+}
+
+export interface DetailsHeaderProps {
+  data: NFTDataType;
+  navigation: StackNavigationProp<StackParams, "Details", undefined>;
 }
