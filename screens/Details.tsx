@@ -7,9 +7,14 @@ import {
   StatusBar,
 } from "react-native";
 
-import { DetailsBid, DetailsDesc, FocusedStatusBar } from "../components";
-import { CustRectButton, CircleButton } from "../components/Button";
-import { SubInfo } from "../components/SubInfo";
+import {
+  DetailsBid,
+  DetailsDesc,
+  FocusedStatusBar,
+  CustRectButton,
+  SubInfo,
+  CircleButton,
+} from "../components";
 
 import { FONTS, COLORS, SIZES, assets, SHADOWS } from "../constants";
 import { DetailsHeaderProps } from "../interfaces";
