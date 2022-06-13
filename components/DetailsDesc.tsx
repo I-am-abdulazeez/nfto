@@ -4,7 +4,6 @@ import { View, Text } from "react-native";
 import { EthPrice, NFTTitle } from "./SubInfo";
 
 import { COLORS, SIZES, FONTS } from "../constants";
-
 import { DetailsDescProps } from "../interfaces";
 
 const DetailsDesc: React.FC<DetailsDescProps> = ({ data }) => {
