@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { View, FlatList, SafeAreaView } from "react-native";
 
-import { HomeHeader, NFTCard, FocusedStatusBar } from "../components";
+import FocusedStatusBar from "../components/FocusedStatusBar";
+import HomeHeader from "../components/HomeHeader";
+import NFTCard from "../components/NFTCard";
 
 import { COLORS, NFTData } from "../constants";
 
@@ -25,6 +27,7 @@ const Home: React.FC = () => {
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
+            removeClippedSubviews={true}
             data={nftData}
             renderItem={({ item }) => <NFTCard data={item} />}
             keyExtractor={(item) => item.id}
