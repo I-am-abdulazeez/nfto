@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
+import { DetailsDescProps } from "../interfaces";
 
-const DetailsDesc = () => {
+const DetailsDesc: React.FC<DetailsDescProps> = ({ data }) => {
   return (
     <View>
       <Text>DetailsDesc</Text>
