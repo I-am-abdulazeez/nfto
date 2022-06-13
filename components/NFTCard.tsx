@@ -2,14 +2,7 @@ import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { CircleButton, CustRectButton } from "./Button";
-import {
-  NFTTitle,
-  EthPrice,
-  ImageCmp,
-  People,
-  EndDate,
-  SubInfo,
-} from "./SubInfo";
+import { NFTTitle, EthPrice, SubInfo } from "../components/SubInfo";
 
 import { SHADOWS, COLORS, SIZES, assets } from "../constants";
 import { NTFCardProps } from "../interfaces";
