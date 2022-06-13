@@ -1,4 +1,5 @@
 import { View, Text, Image, TextInput } from "react-native";
+
 import { COLORS, assets, FONTS, SIZES } from "../constants";
 
 const HomeHeader: React.FC = () => {
