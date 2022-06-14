@@ -1,6 +1,6 @@
-## React-Native Expo template
+## React-Native Expo template with Typecript
 
-# NTF App built with React-Native
+# NTF App built with React-Native + Typescript
 
 To test my React-Native knowledge.
 
